@@ -8,7 +8,7 @@
         class="relative flex flex-col items-center justify-center overflow-hidden text-white transition-all duration-1000
         h-[70vh] sm:h-[80vh] lg:h-[620px]"
         style="
-            background-image: url('{{ asset('images/hero/section-seal.jpg') }}');
+            background-image: url('{{ asset('images/hero/Website-Header-GIIAS-2025.png') }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;">
@@ -26,16 +26,8 @@
         <div class="relative z-10 px-4 text-center">
             <h1 id="hero-text"
             class="max-w-4xl mx-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight transition-opacity duration-500">
-            BYD SEAL
+            {{-- BYD SEAL --}}
             </h1>
-
-            {{-- CTA Button --}}
-            {{-- <a href="#"
-            class="mt-6 inline-block rounded-md bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-xs
-            hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600
-            transition-colors duration-300">
-            Hubungi Kami
-            </a> --}}
         </div>
     </section>
 
@@ -55,7 +47,7 @@
             </div>
 
             <!-- Products Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 lg:gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-8">
                 <!-- BYD SEAL -->
                 <div
                     class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
@@ -216,31 +208,39 @@
                         <span class="absolute inset-0"></span>
                     </a>
                 </div>
+
+                <!-- BYD M6 -->
+                <div
+                    class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
+                    <a href="{{ url('/byd-atto1') }}" class="block">
+                        <div class="relative overflow-hidden rounded-t-2xl bg-gradient-to-br from-gray-50 to-gray-100">
+                            <img src="{{ asset('images/produk/atto1-menu.png') }}" alt="BYD ATTO 1"
+                                class="w-full h-48 sm:h-52 object-contain p-4 group-hover:scale-110 transition-transform duration-700 ease-out">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors duration-300">
+                                BYD ATTO 1
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Energi dalam Gerak
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-emerald-600 font-semibold text-sm">Lihat Detail</span>
+                                <svg class="w-5 h-5 text-emerald-600 group-hover:translate-x-1 transition-transform duration-300"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="absolute inset-0"></span>
+                    </a>
+                </div>
             </div>
-
-            {{-- <!-- Call to Action -->
-            <div class="text-center mt-12 sm:mt-16">
-                <a href="https://wa.me/6287855500627?text=Halo%20BYD%20Jabodetabek%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20layanan%20dan%20produk%20yang%20ditawarkan.%20Mohon%20informasinya.%20Terima%20kasih."
-                    target="_blank" rel="noopener"
-                    class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-emerald-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                    Hubungi Langsung Melalui WhatsApp Kami
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                    </svg>
-                </a>
-            </div> --}}
-
-            {{-- <!-- Call to Action -->
-            <div class="text-center mt-12 sm:mt-16">
-                <a href="{{ url('/notfound') }}" 
-                   class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-emerald-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                    Lihat Semua Produk
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                    </svg>
-                </a>
-            </div> --}}
         </div>
     </section>
 
@@ -250,7 +250,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <!-- Sales Photo -->
         <div class="flex justify-center">
-            <img src="{{ asset('images/foto/foto1.jpeg') }}"
+            <img src="{{ asset('images/foto/foto-putri.jpeg') }}"
             alt="Foto Sales BYD"
             class="w-full max-w-sm rounded-2xl shadow-lg object-cover">
         </div>

@@ -4,8 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
+    <!-- Meta Description untuk SEO -->
+    <meta name="description" content="Temukan mobil listrik BYD terbaik di dealer resmi BYD Bipo Tangerang. Hubungi sales kami untuk test drive dan penawaran menarik.">
+
+    <!-- Open Graph Tags untuk Social Share -->
+    <meta property="og:title" content="Dealer Resmi BYD Bipo Tangerang">
+    <meta property="og:description" content="Temukan mobil listrik BYD terbaik di dealer resmi BYD Bipo Tangerang. Hubungi sales kami untuk test drive dan penawaran menarik.">
+    <meta property="og:image" content="https://bydsalesjabodetabek.com/images/foto-putri.jpg">
+    <meta property="og:url" content="https://bydsalesjabodetabek.com">
+    <meta property="og:type" content="website">
+
+    {{-- <!-- Twitter Card (Optional, share ke X/Twitter) -->
+    <meta name="twitter:card" content="summary_large_image"> --}}
+
     <title>@yield('title', 'BYD')</title>
-    <link rel="shortcut icon" type="image/png" href="{{ asset('/images/logo-brand/logo-byd.png') }}">
+    <link rel="shortcut icon" type="image/png" href="{{ asset('/images/logo-brand/logo-byd-square.svg') }}">
+    
+    {{-- alpinejs --}}
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     {{-- Tailwind css template --}}
     @vite('resources/js/app.js')
 
@@ -89,7 +107,7 @@
                                 <a href="{{ url('/byd-seal') }}"
                                     class="mt-6 block font-semibold text-gray-900 transition-transform duration-300 hover:scale-105">
                                     <h2 class="text-center font-bold text-sm">BYD SEAL</h2>
-                                    <img src="{{ asset('images/produk/seal-menu.png') }}" alt="byd seal">
+                                    <img src="{{ asset('images/produk/seal-menu.png') }}" alt="BYD seal">
                                     <span class="absolute inset-0"></span>
                                 </a>
                             </div>
@@ -97,7 +115,7 @@
                                 <a href="{{ url('/byd-atto3') }}"
                                     class="mt-6 block font-semibold text-gray-900 transition-transform duration-300 hover:scale-105">
                                     <h2 class="text-center font-bold text-sm">BYD ATTO 3</h2>
-                                    <img src="{{ asset('images/produk/atto3-menu.png') }}" alt="byd atto 3">
+                                    <img src="{{ asset('images/produk/atto3-menu.png') }}" alt="BYD atto 3">
                                     <span class="absolute inset-0"></span>
                                 </a>
                             </div>
@@ -105,7 +123,7 @@
                                 <a href="{{ url('/byd-dolphin') }}"
                                     class="mt-6 block font-semibold text-gray-900 transition-transform duration-300 hover:scale-105">
                                     <h2 class="text-center font-bold text-sm">BYD DOLPHIN</h2>
-                                    <img src="{{ asset('images/produk/dolphin-menu.png') }}" alt="byd dolphin">
+                                    <img src="{{ asset('images/produk/dolphin-menu.png') }}" alt="BYD dolphin">
                                     <span class="absolute inset-0"></span>
                                 </a>
                             </div>
@@ -113,7 +131,7 @@
                                 <a href="{{ url('/byd-m6') }}"
                                     class="mt-6 block font-semibold text-gray-900 transition-transform duration-300 hover:scale-105">
                                     <h2 class="text-center font-bold text-sm">BYD M6</h2>
-                                    <img src="{{ asset('images/produk/m6-menu.png') }}" alt="byd m6">
+                                    <img src="{{ asset('images/produk/m6-menu.png') }}" alt="BYD m6">
                                     <span class="absolute inset-0"></span>
                                 </a>
                             </div>
@@ -121,7 +139,15 @@
                                 <a href="{{ url('/byd-sealion7') }}"
                                     class="mt-6 block font-semibold text-gray-900 transition-transform duration-300 hover:scale-105">
                                     <h2 class="text-center font-bold text-sm">BYD SEALION 7</h2>
-                                    <img src="{{ asset('images/produk/sealion7-menu-3.png') }}" alt="byd sealion 7">
+                                    <img src="{{ asset('images/produk/sealion7-menu-3.png') }}" alt="BYD Sealion 7">
+                                    <span class="absolute inset-0"></span>
+                                </a>
+                            </div>
+                            <div class="group relative rounded-lg p-6 text-sm/6 hover:bg-gray-200">
+                                <a href="{{ url('/byd-atto1') }}"
+                                    class="mt-6 block font-semibold text-gray-900 transition-transform duration-300 hover:scale-105">
+                                    <h2 class="text-center font-bold text-sm">BYD ATTO 1</h2>
+                                    <img src="{{ asset('images/produk/atto1-menu.png') }}" alt="BYD Atto 1">
                                     <span class="absolute inset-0"></span>
                                 </a>
                             </div>
@@ -129,13 +155,7 @@
                     </div>
                 </div>
                 
-                {{-- <a href="{{ url('/notfound') }}"
-                    class="text-sm/6 font-semibold text-gray-900 transition-colors duration-300 hover:text-emerald-700">Simulasi
-                    Kredit</a>
-                <a href="{{ url('/notfound') }}"
-                    class="text-sm/6 font-semibold text-gray-900 transition-colors duration-300 hover:text-emerald-700">Test
-                    Drive</a> --}}
-                <a href="{{ url('/notfound') }}"
+                <a href="{{ url('/byd-pricelist') }}"
                     class="text-sm/6 font-semibold text-gray-900 transition-colors duration-300 hover:text-emerald-700">Daftar
                     Harga</a>
                 <a href="{{ url('/notfound') }}"
@@ -268,48 +288,68 @@
     <script>
         // SLIDE OTOMATIS HERO SETIAP 3 DETIK
         document.addEventListener('DOMContentLoaded', function() {
-            const hero = document.getElementById('hero-section');
-            const heroText = document.getElementById('hero-text');
+        const hero = document.getElementById('hero-section');
+        const heroText = document.getElementById('hero-text');
 
-            // Hanya jalankan logika slider jika elemen hero ada di halaman
-            if (hero && heroText) {
-                const slides = [{
-                        image: "{{ asset('images/hero/section-seal.jpg') }}",
-                        text: "BYD SEAL"
-                    },
-                    {
-                        image: "{{ asset('images/hero/section-atto3-c.jpg') }}",
-                        text: "BYD ATTO 3"
-                    },
-                    {
-                        image: "{{ asset('images/hero/section-m6.jpg') }}",
-                        text: "BYD M6"
-                    },
-                    {
-                        image: "{{ asset('images/hero/section-dolphin-2.jpg') }}",
-                        text: "BYD DOLPHIN"
-                    },
-                    {
-                        image: "{{ asset('images/hero/section-sealion-7.jpg') }}",
-                        text: "BYD SEALION 7"
-                    },
-                ];
+        if (hero && heroText) {
+            const slides = [
+                {
+                    image: "{{ asset('images/hero/Website-Header-GIIAS-2025.png') }}",
+                    // text: "BYD SEAL"
+                },
+                {
+                    image: "{{ asset('images/hero/section-seal.jpg') }}",
+                    text: "BYD SEAL"
+                },
+                {
+                    image: "{{ asset('images/hero/section-atto3-c.jpg') }}",
+                    text: "BYD ATTO 3"
+                },
+                {
+                    image: "{{ asset('images/hero/section-m6.jpg') }}",
+                    text: "BYD M6"
+                },
+                {
+                    image: "{{ asset('images/hero/section-dolphin-2.jpg') }}",
+                    text: "BYD DOLPHIN"
+                },
+                {
+                    image: "{{ asset('images/hero/section-sealion-7.jpg') }}",
+                    text: "BYD SEALION 7"
+                },
+                {
+                    image: "{{ asset('images/hero/offering-atto1.png') }}",
+                    text: "BYD ATTO 1"
+                },
+            ];
 
-                let index = 0;
-                setInterval(() => {
-                    index = (index + 1) % slides.length;
-                    // Fade out text
-                    heroText.classList.add('opacity-0');
-                    setTimeout(() => {
-                        // Ganti background dan text setelah fade out
-                        hero.style.backgroundImage = `url('${slides[index].image}')`;
-                        heroText.textContent = slides[index].text;
-                        // Fade in text
-                        heroText.classList.remove('opacity-0');
-                    }, 500); // Waktu fade out sebelum update konten
-                }, 4000);
+            let index = 0;
+
+            function showNextSlide() {
+                index = (index + 1) % slides.length;
+
+                // Fade out
+                heroText.classList.add('opacity-0');
+
+                setTimeout(() => {
+                    hero.style.backgroundImage = `url('${slides[index].image}')`;
+                    heroText.textContent = slides[index].text;
+                    heroText.classList.remove('opacity-0');
+                }, 500);
+
+                // Durasi:
+                // Slide pertama (index 0) => 6000ms
+                // Slide lainnya => 3500ms
+                const nextDuration = (index === 0) ? 6000 : 3500;
+
+                setTimeout(showNextSlide, nextDuration);
             }
-        });
+
+            // Jalankan pertama kali
+            setTimeout(showNextSlide, 6000);
+        }
+    });
+
 
         // Toggle mobile menu with improved UX
         const openBtn = document.getElementById('mobile-menu-open');

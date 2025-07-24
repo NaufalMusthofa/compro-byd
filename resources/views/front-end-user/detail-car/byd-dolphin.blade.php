@@ -4,16 +4,16 @@
 
 @section('content')
     {{-- DETAIL CONTENT --}}
-    <div class="bg-white pt-16">
+    <div class="bg-white pt-2">
         <div aria-hidden="true" class="relative">
-            <img src="{{ asset('images/detail-car/dolphin/1.jpg') }}" alt="" class="h-96 w-full object-cover">
+            <img src="{{ asset('images/detail-car/dolphin/1.jpg') }}" alt="BYD Dolphin" class="w-full h-[16rem] sm:h-[32rem] md:h-[40rem] object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-600"></div>
         </div>
 
         <div class="relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8">
             <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
-                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-5xl">BYD DOLPHIN</h2>
-                <p class="mt-4 text-xl text-gray-500">BYD DOLPHIN mengadopsi konsep desain baru 'Estetika Laut'. Garis bodi
+                <h2 class="relative -top-[11rem] sm:-top-[25rem] md:-top-[33rem] text-3xl font-bold tracking-tight text-white sm:text-5xl">BYD DOLPHIN</h2>
+                <p class="mt-8 text-xl text-gray-500">BYD DOLPHIN mengadopsi konsep desain baru 'Estetika Laut'. Garis bodi
                     yang canggih, dipadukan dengan garis-garis tajam dan kontur yang mengalir, memproyeksikan desain yang
                     percaya diri dan elegan yang ditopang oleh daya listrik bertenaga. Nikmati kebebasan dengan BYD DOLPHIN.
                 </p>

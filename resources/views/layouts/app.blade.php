@@ -128,17 +128,18 @@
                         </div>
                     </div>
                 </div>
-                <a href="{{ url('/notfound') }}"
-                    class="text-sm/6 font-semibold text-gray-900 transition-colors duration-300 hover:text-emerald-700">Berita</a>
-                <a href="{{ url('/notfound') }}"
+                
+                {{-- <a href="{{ url('/notfound') }}"
                     class="text-sm/6 font-semibold text-gray-900 transition-colors duration-300 hover:text-emerald-700">Simulasi
                     Kredit</a>
                 <a href="{{ url('/notfound') }}"
                     class="text-sm/6 font-semibold text-gray-900 transition-colors duration-300 hover:text-emerald-700">Test
-                    Drive</a>
+                    Drive</a> --}}
                 <a href="{{ url('/notfound') }}"
                     class="text-sm/6 font-semibold text-gray-900 transition-colors duration-300 hover:text-emerald-700">Daftar
                     Harga</a>
+                <a href="{{ url('/notfound') }}"
+                    class="text-sm/6 font-semibold text-gray-900 transition-colors duration-300 hover:text-emerald-700">Berita</a>
             </div>
         </nav>
 
@@ -261,6 +262,7 @@
     {{-- Main content with proper spacing --}}
     <main class="pt-16 sm:pt-20 lg:pt-16">
         @yield('content')
+        @include('layouts.footer')
     </main>
 
     <script>

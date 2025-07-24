@@ -4,15 +4,15 @@
 
 @section('content')
     {{-- DETAIL CONTENT --}}
-    <div class="bg-white pt-16">
+    <div class="bg-white pt-2">
         <div aria-hidden="true" class="relative">
-            <img src="{{ asset('images/detail-car/atto3/1.jpg') }}" alt="" class="h-96 w-full object-cover">
+            <img src="{{ asset('images/detail-car/atto3/1.jpg') }}" alt="BYD Atto 3" class="w-full h-[16rem] sm:h-[32rem] md:h-[40rem] object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-800"></div>
         </div>
 
         <div class="relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8">
             <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
-                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-5xl">BYD ATTO 3</h2>
+                <h2 class="relative -top-[11rem] sm:-top-[25rem] md:-top-[33rem] text-3xl font-bold tracking-tight text-white sm:text-5xl">BYD ATTO 3</h2>
                 <p class="mt-4 text-xl text-gray-500">BYD Atto 3 dalam balutan warna Cosmos Black dengan trim D-pillar hitam
                     terbaru dan trim jendela hitam, memancarkan aura sporty yang super keren dan trendi. Pilihan warna lain:
                     Ski White, Boulder Grey, Forest Green dan Surf Blue</p>
@@ -27,7 +27,7 @@
                     <div class="flex flex-col items-center text-center">
                         <h2 id="details-heading" class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Tim
                             Desainer Kelas Internasional</h2>
-                        <p class="mt-3 max-w-3xl text-lg text-gray-600">Dipimpin oleh Kepala Desainer Otomotif Wolfgang
+                        <p class="mt-8 max-w-3xl text-lg text-gray-600">Dipimpin oleh Kepala Desainer Otomotif Wolfgang
                             Egger, tim desain kelas dunia mengintegrasikan inovasi dengan kualitas dan keandalan dalam
                             kreasi otomotif mereka. Lebih dari 200 desainer dari lebih dari 10 negara termasuk Italia,
                             Spanyol, Swiss, dan Jerman, desain BYD dieksekusi secara bersamaan di berbagai lokasi di seluruh

@@ -4,16 +4,16 @@
 
 @section('content')
     {{-- DETAIL CONTENT --}}
-    <div class="bg-white pt-16">
+    <div class="bg-white pt-2">
         <div aria-hidden="true" class="relative">
-            <img src="{{ asset('images/detail-car/m6/1.jpg') }}" alt="" class="h-96 w-full object-cover">
+            <img src="{{ asset('images/detail-car/m6/1.jpg') }}" alt="BYD M6" class="w-full h-[16rem] sm:h-[32rem] md:h-[40rem] object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-600"></div>
         </div>
 
         <div class="relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8">
             <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
-                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-5xl">BYD M6</h2>
-                <p class="mt-4 text-xl text-gray-500">Desain depan yang aerodinamis dan ramping mengoptimalkan aliran udara
+                <h2 class="relative -top-[11rem] sm:-top-[25rem] md:-top-[33rem] text-3xl font-bold tracking-tight text-white sm:text-5xl ">BYD M6</h2>
+                <p class="mt-8 text-xl text-gray-500">Desain depan yang aerodinamis dan ramping mengoptimalkan aliran udara
                     sekaligus mencerminkan kesederhanaan dan keanggunan estetika desain generasi baru BYD dengan perhatian
                     terhadap detail yang teliti</p>
             </div>

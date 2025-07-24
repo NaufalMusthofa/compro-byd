@@ -4,16 +4,16 @@
 
 @section('content')
     {{-- DETAIL CONTENT --}}
-    <div class="bg-white pt-16">
+    <div class="bg-white pt-2">
         <div aria-hidden="true" class="relative">
-            <img src="{{ asset('images/detail-car/seal/2.webp') }}" alt="" class="h-96 w-full object-cover">
+            <img src="{{ asset('images/detail-car/seal/2.webp') }}" alt="BYD Seal" class="w-full h-[16rem] sm:h-[32rem] md:h-[40rem] object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-800"></div>
         </div>
 
         <div class="relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8">
             <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
-                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-5xl">BYD SEAL</h2>
-                <p class="mt-4 text-xl text-gray-500">BYD SEAL dibangun berdasarkan konsep desain "estetika laut". Proporsi
+                <h2 class="relative -top-[11rem] sm:-top-[25rem] md:-top-[33rem] text-3xl font-bold tracking-tight text-white sm:text-5xl ">BYD SEAL</h2>
+                <p class="mt-8 text-xl text-gray-500">BYD SEAL dibangun berdasarkan konsep desain "estetika laut". Proporsi
                     bodi yang eksklusif berasal dari perburuan sampai akhir akan keindahan. Mencari inspirasi antara gerakan
                     dan ketenangan laut serta mewujudkan keanggunan dan keindahan unik BYD SEAL.</p>
             </div>
@@ -42,7 +42,7 @@
                             <h2 id="details-heading"
                                 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-4">
                                 E-Platform 3.0</h2>
-                            <p class="mt-8 text-base text-gray-500">BYD SEAL dibangun dengan platform BYD e-platform 3.0,
+                            <p class="mt-3 text-base text-gray-500">BYD SEAL dibangun dengan platform BYD e-platform 3.0,
                                 dirancang untuk generasi berikutnya dari mobil listrik pintar yang menawarkan empat
                                 keunggulan utama: kecerdasan, efisiensi, keamanan, dan estetika. Ini tidak hanya lebih
                                 mengintegrasikan dan standarisasi komponen inti, tetapi juga membangun struktur tubuh baru,
@@ -55,7 +55,7 @@
                             <h2 id="details-heading"
                                 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-4">Teknologi Baterai
                                 Blade Berpaten Ultra-Aman</h2>
-                            <p class="mt-8 text-base text-gray-500">Selama menjalani uji penetrasi paku, Baterai Blade tidak
+                            <p class="mt-3 text-base text-gray-500">Selama menjalani uji penetrasi paku, Baterai Blade tidak
                                 mengeluarkan asap atau api setelah ditembus, dan suhunya hanya mencapai 30 hingga 60°C.
                                 Sel-sel Baterai Blade juga lulus uji kondisi ekstrem lainnya, seperti diremukkan, ditekuk,
                                 dipanaskan dalam tungku hingga 300°C, dan diisi daya lebih dari 260%. Tidak satu pun dari
@@ -178,8 +178,4 @@
             </div>
         </div>
     </div>
-
-
-
-
 @endsection

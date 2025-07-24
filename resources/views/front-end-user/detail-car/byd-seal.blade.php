@@ -91,7 +91,7 @@
                     Keep your device safe with a fabric sleeve that matches in quality and looks.</p>
             </div> --}}
 
-            <div class="mt-16 space-y-16">
+            <div class="mt-8 space-y-16">
                 <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
                     <div class="mt-6 lg:col-span-5 lg:col-start-1 lg:row-start-1 lg:mt-0 xl:col-span-4">
                         <h3 class="text-lg font-medium text-gray-900">Layar sentuh yang dapat diputar</h3>

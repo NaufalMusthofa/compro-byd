@@ -5,25 +5,40 @@
 @section('content')
     <!-- Hero Section with Banner Image Slider -->
     <section id="hero-section"
-        class="relative h-[620px] text-white flex flex-col items-center justify-center overflow-hidden transition-all duration-1000"
-        style="background-image: url('{{ asset('images/hero/section-seal.jpg') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        class="relative flex flex-col items-center justify-center overflow-hidden text-white transition-all duration-1000
+        h-[70vh] sm:h-[80vh] lg:h-[620px]"
+        style="
+            background-image: url('{{ asset('images/hero/section-seal.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;">
+        
         <!-- Dark Overlay -->
-        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
         <!-- Pattern Overlay -->
         <div class="absolute inset-0 opacity-20"
-            style="background-image: radial-gradient(circle at center, #1F3A68 1px, transparent 1px); background-size: 20px 20px;">
+            style="
+            background-image: radial-gradient(circle at center, #1F3A68 1px, transparent 1px);
+            background-size: 20px 20px;">
         </div>
-        <div class="relative z-1 px-4 text-center">
+
+        <div class="relative z-10 px-4 text-center">
             <h1 id="hero-text"
-                class="-mt-14 max-w-4xl mx-auto text-4xl font-bold leading-tight md:text-5xl lg:text-6xl transition-opacity duration-500">
-                BYD SEAL
+            class="max-w-4xl mx-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight transition-opacity duration-500">
+            BYD SEAL
             </h1>
-            <a href="#"
-                class="mt-10 inline-block rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors duration-300">
-                Hubungi Kami
-            </a>
+
+            {{-- CTA Button --}}
+            {{-- <a href="#"
+            class="mt-6 inline-block rounded-md bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-xs
+            hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600
+            transition-colors duration-300">
+            Hubungi Kami
+            </a> --}}
         </div>
     </section>
+
 
     <!-- Products Section -->
     <section class="py-16 sm:py-20 lg:py-24 bg-white">
@@ -203,9 +218,9 @@
                 </div>
             </div>
 
-            <!-- Call to Action -->
+            {{-- <!-- Call to Action -->
             <div class="text-center mt-12 sm:mt-16">
-                <a href="https://wa.me/6288289722296?text=Halo%20BYD%20Jabodetabek%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20layanan%20dan%20produk%20yang%20ditawarkan.%20Mohon%20informasinya.%20Terima%20kasih."
+                <a href="https://wa.me/6287855500627?text=Halo%20BYD%20Jabodetabek%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20layanan%20dan%20produk%20yang%20ditawarkan.%20Mohon%20informasinya.%20Terima%20kasih."
                     target="_blank" rel="noopener"
                     class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-emerald-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                     Hubungi Langsung Melalui WhatsApp Kami
@@ -214,7 +229,7 @@
                             d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                     </svg>
                 </a>
-            </div>
+            </div> --}}
 
             {{-- <!-- Call to Action -->
             <div class="text-center mt-12 sm:mt-16">
@@ -228,6 +243,50 @@
             </div> --}}
         </div>
     </section>
+
+    <!-- Sales Introduction Section -->
+    <section class="py-16 sm:py-20 lg:py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <!-- Sales Photo -->
+        <div class="flex justify-center">
+            <img src="{{ asset('images/foto/foto1.jpeg') }}"
+            alt="Foto Sales BYD"
+            class="w-full max-w-sm rounded-2xl shadow-lg object-cover">
+        </div>
+
+        <!-- Sales Description -->
+        <div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Kenalan dengan Brand Consultan Kami
+            </h2>
+            <p class="text-lg text-gray-700 mb-4 text-justify">
+            Hai! Perkenalkan, saya <span class="font-semibold"> Nurul Putriyana</span>, Brand Consultan resmi BYD Bipo Tangerang.
+            Saya siap membantu Anda menemukan kendaraan listrik terbaik sesuai kebutuhan.
+            </p>
+            <p class="text-lg text-gray-700 mb-4 text-justify">
+            Dengan pengalaman melayani pelanggan di Jabodetabek, saya memastikan Anda mendapatkan informasi
+            lengkap, test drive, dan penawaran terbaik dari BYD. Kepuasan Anda prioritas saya!
+            </p>
+            <p class="text-lg text-gray-700 mb-6 text-justify">
+            Jangan ragu untuk menghubungi saya melalui WhatsApp kapan saja. Saya siap membantu proses konsultasi,
+            pembelian, hingga layanan purna jual.
+            </p>
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/6287855500627?text=Halo%20BYD%20Jabodetabek%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20layanan%20dan%20produk%20yang%20ditawarkan.%20Mohon%20informasinya.%20Terima%20kasih."
+                    target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-emerald-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    Hubungi Sekarang
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+        </div>
+        </div>
+    </div>
+    </section>
+
 
     <!-- Features Section -->
     <section class="py-16 sm:py-20 bg-gray-50">

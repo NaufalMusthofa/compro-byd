@@ -5,32 +5,43 @@
 @section('content')
     <!-- Hero Section with Banner Image Slider -->
     <section id="hero-section"
-        class="relative flex flex-col items-center justify-center overflow-hidden text-white transition-all duration-1000
-        h-[70vh] sm:h-[80vh] lg:h-[620px]"
-        style="
-            background-image: url('{{ asset('images/hero/Website-Header-GIIAS-2025.png') }}');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;">
-        
-        <!-- Dark Overlay -->
+        class="relative flex items-center justify-center overflow-hidden bg-black h-[80vh] sm:h-[75vh] md:h-[620px]">
+
+        <!-- Overlay -->
         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
 
         <!-- Pattern Overlay -->
         <div class="absolute inset-0 opacity-20"
-            style="
-            background-image: radial-gradient(circle at center, #1F3A68 1px, transparent 1px);
-            background-size: 20px 20px;">
-        </div>
+            style="background-image: radial-gradient(circle at center, #1F3A68 1px, transparent 1px); background-size: 20px 20px;"></div>
 
-        <div class="relative z-10 px-4 text-center">
-            <h1 id="hero-text"
-            class="max-w-4xl mx-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight transition-opacity duration-500">
-            {{-- BYD SEAL --}}
+        <!-- Content -->
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 id="hero-text" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight transition-opacity duration-500">
+            {{-- GIIAS 2025 --}}
             </h1>
         </div>
     </section>
 
+    {{-- layouts/app.blade.php atau di section @push('styles') --}}
+    <style>
+    #hero-section {
+        background-image: url('{{ asset('images/hero/Website-Header-GIIAS-2025-desktop.png') }}');
+        background-size: cover;
+        background-position: center;
+    }
+
+    @media (max-width: 1023px) and (min-width: 640px) {
+        #hero-section {
+        background-image: url('{{ asset('images/hero/Website-Header-GIIAS-2025-tablet.png') }}');
+        }
+    }
+
+    @media (max-width: 639px) {
+        #hero-section {
+        background-image: url('{{ asset('images/hero/Website-Header-GIIAS-2025-mobile.png') }}');
+        }
+    }
+    </style>
 
     <!-- Products Section -->
     <section class="py-16 sm:py-20 lg:py-24 bg-white">

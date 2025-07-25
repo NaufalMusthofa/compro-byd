@@ -257,21 +257,26 @@
                                         </div>
                                         <span class="absolute inset-0"></span>
                                     </a>
+                                    <a href="{{ url('/byd-atto1') }}"
+                                        class="block relative rounded-lg py-3 px-6 text-lg sm:text-xl font-semibold text-gray-900 hover:bg-gray-50 active:bg-gray-100 transition-colors duration-200">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="flex-shrink-0 w-16 h-12 sm:w-20 sm:h-14">
+                                                <img src="{{ asset('images/produk/atto1-menu.png') }}"
+                                                    alt="byd atto 1" class="w-full h-full object-contain">
+                                            </div>
+                                            <h2 class="font-bold text-base sm:text-lg">BYD ATTO 1</h2>
+                                        </div>
+                                        <span class="absolute inset-0"></span>
+                                    </a>
                                 </div>
                             </div>
 
                             {{-- Main menu items with better mobile sizing --}}
+                            <a href="{{ url('/byd-pricelist') }}"
+                            class="-mx-3 block rounded-lg px-3 py-4 text-xl sm:text-2xl font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-100 active:bg-gray-200">Daftar
+                            Harga</a>
                             <a href="{{ url('/notfound') }}"
                                 class="-mx-3 block rounded-lg px-3 py-4 text-xl sm:text-2xl font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-100 active:bg-gray-200">Berita</a>
-                            <a href="{{ url('/notfound') }}"
-                                class="-mx-3 block rounded-lg px-3 py-4 text-xl sm:text-2xl font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-100 active:bg-gray-200">Simulasi
-                                Kredit</a>
-                            <a href="{{ url('/notfound') }}"
-                                class="-mx-3 block rounded-lg px-3 py-4 text-xl sm:text-2xl font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-100 active:bg-gray-200">Test
-                                Drive</a>
-                            <a href="{{ url('/notfound') }}"
-                                class="-mx-3 block rounded-lg px-3 py-4 text-xl sm:text-2xl font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-100 active:bg-gray-200">Daftar
-                                Harga</a>
                         </div>
                     </div>
                 </div>
@@ -286,40 +291,36 @@
     </main>
 
     <script>
-        // SLIDE OTOMATIS HERO SETIAP 3 DETIK
         document.addEventListener('DOMContentLoaded', function() {
-        const hero = document.getElementById('hero-section');
-        const heroText = document.getElementById('hero-text');
+            const hero = document.getElementById('hero-section');
+            const heroText = document.getElementById('hero-text');
 
-        if (hero && heroText) {
+            if (hero && heroText) {
             const slides = [
                 {
-                    image: "{{ asset('images/hero/Website-Header-GIIAS-2025.png') }}",
+                image: "{{ asset('images/hero/Website-Header-GIIAS-2025-desktop.jpg') }}",
+                text: "GIIAS 2025"
                 },
                 {
-                    image: "{{ asset('images/hero/section-seal.jpg') }}",
-                    text: "BYD SEAL"
+                image: "{{ asset('images/hero/section-seal.jpg') }}",
+                text: "BYD SEAL"
                 },
                 {
-                    image: "{{ asset('images/hero/section-atto3-c.jpg') }}",
-                    text: "BYD ATTO 3"
+                image: "{{ asset('images/hero/section-atto3-c.jpg') }}",
+                text: "BYD ATTO 3"
                 },
                 {
-                    image: "{{ asset('images/hero/section-m6.jpg') }}",
-                    text: "BYD M6"
+                image: "{{ asset('images/hero/section-m6.jpg') }}",
+                text: "BYD M6"
                 },
                 {
-                    image: "{{ asset('images/hero/section-dolphin-2.jpg') }}",
-                    text: "BYD DOLPHIN"
+                image: "{{ asset('images/hero/section-dolphin-2.jpg') }}",
+                text: "BYD DOLPHIN"
                 },
                 {
-                    image: "{{ asset('images/hero/section-sealion-7.jpg') }}",
-                    text: "BYD SEALION 7"
-                },
-                {
-                    image: "{{ asset('images/hero/offering-atto1.png') }}",
-                    text: "BYD ATTO 1"
-                },
+                image: "{{ asset('images/hero/section-sealion-7.jpg') }}",
+                text: "BYD SEALION 7"
+                }
             ];
 
             let index = 0;
@@ -331,23 +332,19 @@
                 heroText.classList.add('opacity-0');
 
                 setTimeout(() => {
-                    hero.style.backgroundImage = `url('${slides[index].image}')`;
-                    heroText.textContent = slides[index].text;
-                    heroText.classList.remove('opacity-0');
+                hero.style.backgroundImage = `url('${slides[index].image}')`;
+                heroText.textContent = slides[index].text;
+                heroText.classList.remove('opacity-0');
                 }, 500);
 
-                // Durasi:
-                // Slide pertama (index 0) => 6000ms
-                // Slide lainnya => 3500ms
-                const nextDuration = (index === 0) ? 6000 : 3500;
-
+                const nextDuration = (index === 0) ? 5500 : 4000;
                 setTimeout(showNextSlide, nextDuration);
             }
 
-            // Jalankan pertama kali
+            // Mulai rotasi
             setTimeout(showNextSlide, 6000);
-        }
-    });
+            }
+        });
 
 
         // Toggle mobile menu with improved UX

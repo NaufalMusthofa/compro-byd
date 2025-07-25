@@ -295,7 +295,6 @@
             const slides = [
                 {
                     image: "{{ asset('images/hero/Website-Header-GIIAS-2025.png') }}",
-                    // text: "BYD SEAL"
                 },
                 {
                     image: "{{ asset('images/hero/section-seal.jpg') }}",

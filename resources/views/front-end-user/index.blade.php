@@ -159,7 +159,7 @@
                         <div class="p-6">
                             <h3
                                 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors duration-300">
-                                BYD M6
+                                BYD M6>
                             </h3>
                             <p class="text-gray-600 text-sm mb-4">
                                 MPV keluarga dengan kenyamanan maksimal

@@ -292,59 +292,84 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const hero = document.getElementById('hero-section');
+            const heroSourceDesktop = document.getElementById('hero-source-desktop');
+            const heroSourceTablet = document.getElementById('hero-source-tablet');
+            const heroImg = document.getElementById('hero-img');
             const heroText = document.getElementById('hero-text');
 
-            if (hero && heroText) {
             const slides = [
-                {
-                image: "{{ asset('images/hero/Website-Header-GIIAS-2025-desktop.jpg') }}",
-                text: "GIIAS 2025"
-                },
-                {
-                image: "{{ asset('images/hero/section-seal.jpg') }}",
-                text: "BYD SEAL"
-                },
-                {
-                image: "{{ asset('images/hero/section-atto3-c.jpg') }}",
-                text: "BYD ATTO 3"
-                },
-                {
-                image: "{{ asset('images/hero/section-m6.jpg') }}",
-                text: "BYD M6"
-                },
-                {
-                image: "{{ asset('images/hero/section-dolphin-2.jpg') }}",
-                text: "BYD DOLPHIN"
-                },
-                {
-                image: "{{ asset('images/hero/section-sealion-7.jpg') }}",
-                text: "BYD SEALION 7"
-                }
+            {
+                desktop: "{{ asset('images/hero/Website-Header-GIIAS-2025-desktop.png') }}",
+                tablet: "{{ asset('images/hero/Website-Header-GIIAS-2025-tablet.png') }}",
+                mobile: "{{ asset('images/hero/Website-Header-GIIAS-2025-mobile.png') }}",
+                text: ""
+            },
+            {
+                desktop: "{{ asset('images/hero/4cars-home-desktop.jpg') }}",
+                tablet: "{{ asset('images/hero/4cars-home-tablet.jpg') }}",
+                mobile: "{{ asset('images/hero/4cars-home-mobile.jpg') }}",
+                text: ""
+            },
+            {
+                desktop: "{{ asset('images/hero/seal-desktop.jpg') }}",
+                tablet: "{{ asset('images/hero/seal-tablet.jpg') }}",
+                mobile: "{{ asset('images/hero/seal-mobile.jpg') }}",
+                text: ""
+            },
             ];
 
-            let index = 0;
+            let index = 1;
 
             function showNextSlide() {
+            heroText.classList.add('opacity-0');
+
+            setTimeout(() => {
+                const s = slides[index];
+
+                heroSourceDesktop.srcset = s.desktop || s.image;
+                heroSourceTablet.srcset = s.tablet || s.desktop || s.image;
+                heroImg.src = s.mobile || s.tablet || s.desktop || s.image;
+
+                heroText.textContent = s.text || '';
+                heroText.classList.remove('opacity-0');
+
                 index = (index + 1) % slides.length;
 
-                // Fade out
-                heroText.classList.add('opacity-0');
-
-                setTimeout(() => {
-                hero.style.backgroundImage = `url('${slides[index].image}')`;
-                heroText.textContent = slides[index].text;
-                heroText.classList.remove('opacity-0');
-                }, 500);
-
-                const nextDuration = (index === 0) ? 5500 : 4000;
+                const nextDuration = (index === 0) ? 6000 : 4000;
                 setTimeout(showNextSlide, nextDuration);
+            }, 500);
             }
 
-            // Mulai rotasi
             setTimeout(showNextSlide, 6000);
-            }
         });
+
+
+        let index = 1; // Slide kedua
+        function showNextSlide() {
+            heroText.classList.add('opacity-0');
+            setTimeout(() => {
+            if (index === 0) {
+                heroSourceDesktop.srcset = slides[0].desktop;
+                heroSourceTablet.srcset = slides[0].tablet;
+                heroImg.src = slides[0].mobile;
+            } else {
+                // Non responsive slides, pakai gambar sama untuk semua
+                heroSourceDesktop.srcset = slides[index].image;
+                heroSourceTablet.srcset = slides[index].image;
+                heroImg.src = slides[index].image;
+            }
+            heroText.textContent = slides[index].text;
+            heroText.classList.remove('opacity-0');
+
+            index = (index + 1) % slides.length;
+            const nextDuration = (index === 0) ? 6000 : 4000;
+            setTimeout(showNextSlide, nextDuration);
+            }, 500);
+        }
+
+        setTimeout(showNextSlide, 6000);
+
+        // END SCRIPT HEROs
 
 
         // Toggle mobile menu with improved UX

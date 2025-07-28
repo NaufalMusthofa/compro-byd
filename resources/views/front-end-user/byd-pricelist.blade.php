@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Daftar Harga BYD')
+@section('title', 'Pricelist | BYD Bipo Tangerang')
 
 @section('content')
 <section class="py-16 sm:py-20 lg:py-24 bg-white">

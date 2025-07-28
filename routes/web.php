@@ -31,7 +31,16 @@ Route::get('/byd-atto1', function () {
     return view('/front-end-user/detail-car/byd-atto1');
 });
 
+Route::get('/denza-d9', function () {
+    return view('/front-end-user/detail-car/denza-d9');
+});
+
 Route::get('/byd-pricelist', [App\Http\Controllers\PriceListController::class, 'index']);
+
+// NOTFOUND 404 TAMPILAN
+Route::get('/galeri', function () {
+    return view('/front-end-user/galeri');
+});
 
 // NOTFOUND 404 TAMPILAN
 Route::get('/notfound', function () {

@@ -20,7 +20,7 @@
 
         {{-- DETAIL SECTION --}}
         <div class="bg-gray-50">
-            <div class="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
+            <div class="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
                 <!-- Details section -->
                 <section aria-labelledby="details-heading">
                     <div class="flex flex-col items-center text-center">
@@ -57,7 +57,7 @@
                     </div>
 
                     {{-- paragraf ke 3 --}}
-                    <div class="bg-gray-50 mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
+                    <div class="bg-gray-50 mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
                         {{-- <div class="mx-auto max-w-3xl text-center">
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Protect your device</h2>
                 <p class="mt-4 text-gray-500">As a digital creative, your laptop or tablet is at the center of your work.
@@ -157,7 +157,7 @@
             </div>
         </div>
 
-        <div class="bg-gray-50 mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
+        <div class="bg-gray-50 mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
             {{-- <div class="mx-auto max-w-3xl text-center">
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Protect your device</h2>
                 <p class="mt-4 text-gray-500">As a digital creative, your laptop or tablet is at the center of your work.
@@ -268,7 +268,7 @@
         <div class="absolute inset-0 z-10 bg-black/70"></div>
 
         <!-- Konten teks di atas semuanya -->
-        <div class="relative z-20 mx-auto max-w-7xl px-6 py-32 text-center sm:py-40 lg:px-8">
+        <div class="relative z-20 mx-auto max-w-7xl px-6 py-12 text-center sm:py-40 lg:px-8">
             <h1 class="mt-4 text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">
                 Bebaskan Ambisi dengan Performa Berkendara Maksimal
             </h1>

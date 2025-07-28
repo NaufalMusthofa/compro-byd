@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'BYD Bipo Tangerang')
 
 @section('content')
     <!-- Hero Section with Banner Image Slider -->
@@ -45,13 +45,13 @@
             </div>
 
             <!-- Products Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
                 <!-- BYD SEAL -->
                 <div
                     class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
                     <a href="{{ url('/byd-seal') }}" class="block">
                         <div class="relative overflow-hidden rounded-t-2xl bg-gradient-to-br from-gray-50 to-gray-100">
-                            <img src="{{ asset('images/produk/seal-menu.png') }}" alt="BYD SEAL"
+                            <img src="{{ asset('images/detail-car/seal/seal-fix.png') }}" alt="BYD SEAL"
                                 class="w-full h-48 sm:h-52 object-contain p-4 group-hover:scale-110 transition-transform duration-700 ease-out">
                             <!-- Gradient Overlay on Hover -->
                             <div
@@ -84,7 +84,7 @@
                     class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
                     <a href="{{ url('/byd-atto3') }}" class="block">
                         <div class="relative overflow-hidden rounded-t-2xl bg-gradient-to-br from-gray-50 to-gray-100">
-                            <img src="{{ asset('images/produk/atto3-menu.png') }}" alt="BYD ATTO 3"
+                            <img src="{{ asset('images/detail-car/atto3/atto3-white-fix.png') }}" alt="BYD ATTO 3"
                                 class="w-full h-48 sm:h-52 object-contain p-4 group-hover:scale-110 transition-transform duration-700 ease-out">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -116,7 +116,7 @@
                     class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
                     <a href="{{ url('/byd-dolphin') }}" class="block">
                         <div class="relative overflow-hidden rounded-t-2xl bg-gradient-to-br from-gray-50 to-gray-100">
-                            <img src="{{ asset('images/produk/dolphin-menu.png') }}" alt="BYD DOLPHIN"
+                            <img src="{{ asset('images/detail-car/dolphin/dolphin-fix.png') }}" alt="BYD DOLPHIN"
                                 class="w-full h-48 sm:h-52 object-contain p-4 group-hover:scale-110 transition-transform duration-700 ease-out">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -148,7 +148,7 @@
                     class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
                     <a href="{{ url('/byd-m6') }}" class="block">
                         <div class="relative overflow-hidden rounded-t-2xl bg-gradient-to-br from-gray-50 to-gray-100">
-                            <img src="{{ asset('images/produk/m6-menu.png') }}" alt="BYD M6"
+                            <img src="{{ asset('images/detail-car/m6/m6-blue-fix-fixed.png') }}" alt="BYD M6"
                                 class="w-full h-48 sm:h-52 object-contain p-4 group-hover:scale-110 transition-transform duration-700 ease-out">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -157,7 +157,7 @@
                         <div class="p-6">
                             <h3
                                 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors duration-300">
-                                BYD M6>
+                                BYD M6
                             </h3>
                             <p class="text-gray-600 text-sm mb-4">
                                 MPV keluarga dengan kenyamanan maksimal
@@ -180,7 +180,7 @@
                     class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
                     <a href="{{ url('/byd-sealion7') }}" class="block">
                         <div class="relative overflow-hidden rounded-t-2xl bg-gradient-to-br from-gray-50 to-gray-100">
-                            <img src="{{ asset('images/produk/sealion7-menu-3.png') }}" alt="BYD SEALION 7"
+                            <img src="{{ asset('images/detail-car/sealion7/sealion7-2.png') }}" alt="BYD SEALION 7"
                                 class="w-full h-48 sm:h-52 object-contain p-4 group-hover:scale-110 transition-transform duration-700 ease-out">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -207,12 +207,12 @@
                     </a>
                 </div>
 
-                <!-- BYD M6 -->
+                <!-- BYD ATTO 1 -->
                 <div
                     class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
                     <a href="{{ url('/byd-atto1') }}" class="block">
                         <div class="relative overflow-hidden rounded-t-2xl bg-gradient-to-br from-gray-50 to-gray-100">
-                            <img src="{{ asset('images/produk/atto1-menu.png') }}" alt="BYD ATTO 1"
+                            <img src="{{ asset('images/detail-car/atto1/atto1.png') }}" alt="BYD ATTO 1"
                                 class="w-full h-48 sm:h-52 object-contain p-4 group-hover:scale-110 transition-transform duration-700 ease-out">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -238,6 +238,39 @@
                         <span class="absolute inset-0"></span>
                     </a>
                 </div>
+
+                <!-- DENZA D9 -->
+                <div
+                    class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
+                    <a href="{{ url('/denza-d9') }}" class="block">
+                        <div class="relative overflow-hidden rounded-t-2xl bg-gradient-to-br from-gray-50 to-gray-100">
+                            <img src="{{ asset('images/detail-car/denza-d9/blue1.png') }}" alt="DENZA D9"
+                                class="w-full h-48 sm:h-52 object-contain p-4 transform scale-125 group-hover:scale-150 transition-transform duration-700 ease-out">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors duration-300">
+                                DENZA D9
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Sebuah Kemewahan dalam Setiap Perjalanan
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-emerald-600 font-semibold text-sm">Lihat Detail</span>
+                                <svg class="w-5 h-5 text-emerald-600 group-hover:translate-x-1 transition-transform duration-300"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="absolute inset-0"></span>
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -256,10 +289,10 @@
         <!-- Sales Description -->
         <div>
             <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Kenalan dengan Brand Consultan Kami
+            Kenalan dengan Brand Consultant Kami
             </h2>
             <p class="text-lg text-gray-700 mb-4 text-justify">
-            Hai! Perkenalkan, saya <span class="font-semibold"> Nurul Putriyana</span>, Brand Consultan resmi BYD Bipo Tangerang.
+            Hai! Perkenalkan, saya <span class="font-semibold"> Nurul Putriyana</span> biasa dipanggil <span class="font-semibold"> Putri</span>, Brand Consultant resmi BYD Bipo Tangerang.
             Saya siap membantu Anda menemukan kendaraan listrik terbaik sesuai kebutuhan.
             </p>
             <p class="text-lg text-gray-700 mb-4 text-justify">

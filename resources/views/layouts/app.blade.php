@@ -11,13 +11,17 @@
     <!-- Open Graph Tags untuk Social Share -->
     <meta property="og:title" content="Dealer Resmi BYD Bipo Tangerang">
     <meta property="og:description" content="Temukan mobil listrik BYD terbaik di dealer resmi BYD Bipo Tangerang. Hubungi sales kami untuk test drive dan penawaran menarik.">
-    <meta property="og:image" content="https://bydsalesjabodetabek.com/images/foto-putri.jpg">
+    <meta property="og:image" content="https://bydsalesjabodetabek.com/images/foto/foto-putri.jpg">
     <meta property="og:url" content="https://bydsalesjabodetabek.com">
     <meta property="og:type" content="website">
 
     {{-- <!-- Twitter Card (Optional, share ke X/Twitter) -->
     <meta name="twitter:card" content="summary_large_image"> --}}
+    <meta name="twitter:title" content="Dealer Resmi BYD Bipo Tangerang">
+    <meta name="twitter:description" content="Temukan mobil listrik BYD terbaik di dealer resmi BYD Bipo Tangerang. Hubungi sales kami untuk test drive dan penawaran menarik.">
+    <meta name="twitter:image" content="https://bydsalesjabodetabek.com/images/foto/foto-putri.jpg">
 
+    {{-- CSRF Token --}}
     <title>@yield('title', 'BYD')</title>
     <link rel="shortcut icon" type="image/png" href="{{ asset('/images/logo-brand/logo-byd-square.svg') }}">
     
@@ -83,9 +87,12 @@
                     </svg>
                 </button>
             </div>
-
+            
             {{-- Desktop menu --}}
             <div class="hidden lg:flex lg:gap-x-12">
+                <a href="{{ url('/') }}"
+                    class="text-sm/6 font-semibold text-gray-900 transition-colors duration-300 hover:text-emerald-700">Home</a>
+                    
                 <div>
                     <button type="button" id="product-button"
                         class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 transition-colors duration-300 hover:text-emerald-700"
@@ -98,7 +105,7 @@
                                 clip-rule="evenodd" />
                         </svg>
                     </button>
-
+                    
                     {{-- Product flyout menu --}}
                     <div id="product-menu"
                         class="absolute inset-x-0 top-0 -z-10 bg-white pt-14 ring-1 shadow-lg ring-gray-900/5 hidden">
@@ -151,6 +158,14 @@
                                     <span class="absolute inset-0"></span>
                                 </a>
                             </div>
+                            <div class="group relative rounded-lg p-6 text-sm/6 hover:bg-gray-200">
+                                <a href="{{ url('/denza-d9') }}"
+                                    class="mt-6 block font-semibold text-gray-900 transition-transform duration-300 hover:scale-105">
+                                    <h2 class="text-center font-bold text-sm">DENZA D9</h2>
+                                    <img src="{{ asset('images/produk/denzad9.png') }}" alt="DENZA D9">
+                                    <span class="absolute inset-0"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -158,8 +173,8 @@
                 <a href="{{ url('/byd-pricelist') }}"
                     class="text-sm/6 font-semibold text-gray-900 transition-colors duration-300 hover:text-emerald-700">Daftar
                     Harga</a>
-                <a href="{{ url('/notfound') }}"
-                    class="text-sm/6 font-semibold text-gray-900 transition-colors duration-300 hover:text-emerald-700">Berita</a>
+                <a href="{{ url('/galeri') }}"
+                    class="text-sm/6 font-semibold text-gray-900 transition-colors duration-300 hover:text-emerald-700">Galeri</a>
             </div>
         </nav>
 
@@ -275,8 +290,8 @@
                             <a href="{{ url('/byd-pricelist') }}"
                             class="-mx-3 block rounded-lg px-3 py-4 text-xl sm:text-2xl font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-100 active:bg-gray-200">Daftar
                             Harga</a>
-                            <a href="{{ url('/notfound') }}"
-                                class="-mx-3 block rounded-lg px-3 py-4 text-xl sm:text-2xl font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-100 active:bg-gray-200">Berita</a>
+                            <a href="{{ url('/galeri') }}"
+                                class="-mx-3 block rounded-lg px-3 py-4 text-xl sm:text-2xl font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-100 active:bg-gray-200">Galeri</a>
                         </div>
                     </div>
                 </div>

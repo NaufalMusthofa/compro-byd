@@ -13,7 +13,7 @@
         <div class="relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8">
             <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
                 <h2 class="relative -top-[11rem] sm:-top-[25rem] md:-top-[33rem] text-3xl font-bold tracking-tight text-white sm:text-5xl">BYD ATTO 3</h2>
-                <p class="mt-4 text-xl text-gray-500">BYD Atto 3 dalam balutan warna Cosmos Black dengan trim D-pillar hitam
+                <p class="mt-8 text-xl text-gray-500">BYD Atto 3 dalam balutan warna Cosmos Black dengan trim D-pillar hitam
                     terbaru dan trim jendela hitam, memancarkan aura sporty yang super keren dan trendi. Pilihan warna lain:
                     Ski White, Boulder Grey, Forest Green dan Surf Blue</p>
             </div>
@@ -21,7 +21,7 @@
 
         {{-- DETAIL SECTION --}}
         <div class="bg-gray-50">
-            <div class="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
+            <div class="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
                 <!-- Details section -->
                 <section aria-labelledby="details-heading">
                     <div class="flex flex-col items-center text-center">
@@ -83,7 +83,7 @@
             </div>
         </div>
 
-        <div class="bg-gray-50 mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
+        <div class="bg-gray-50 mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
             {{-- <div class="mx-auto max-w-3xl text-center">
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Protect your device</h2>
                 <p class="mt-4 text-gray-500">As a digital creative, your laptop or tablet is at the center of your work.
